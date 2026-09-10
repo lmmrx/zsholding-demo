@@ -57,7 +57,7 @@ export function getProperty(slug: string): Property | undefined {
 }
 
 /** Only properties that have an amenities breakdown get their own hub +
- * amenity pages (matches the original site: only Red Deer North linked out). */
+ * amenity pages. */
 export function getPropertiesWithAmenities(): Property[] {
   return getAllProperties().filter(
     (p) => p.amenities && p.amenities.length > 0

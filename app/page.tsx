@@ -225,7 +225,7 @@ export default function HomePage() {
                           VALUE · {String(index + 1).padStart(2, '0')}
                         </div>
 
-                        <h3 className="mb-2 font-serif text-[18.5px] font-semibold tracking-[-.005em] text-navy">
+                        <h3 className="mb-2 font-serif text-[18.5px] font-semibold tracking-[-.005em] text-ink">
                           {value.title}
                         </h3>
 

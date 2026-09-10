@@ -1,7 +1,8 @@
 import type { Config } from 'tailwindcss';
 
-// Design tokens ported 1:1 from the original css/style.css :root block.
-// Change a value here and it updates everywhere the token is used.
+// Dark theme design tokens. `navy` and `slate` are reserved for surfaces
+// (sidebar, hero panels) — never used as text colors — so their values can
+// stay deep without ever landing dark-text-on-dark-background anywhere.
 const config: Config = {
   content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
@@ -10,14 +11,14 @@ const config: Config = {
         navy: '#0B1D33',
         'navy-2': '#122A46',
         slate: '#24405F',
-        steel: '#6790B8',
-        bg: '#F3F5F7',
-        paper: '#FFFFFF',
-        ink: '#16202B',
-        'ink-soft': '#5B6774',
-        amber: '#B8863A',
+        steel: '#7EA6CC',
+        bg: '#111823',
+        paper: '#1A2432',
+        ink: '#EDF1F5',
+        'ink-soft': '#93A1B0',
+        amber: '#D7A54D',
         'amber-soft': '#F1E4CC',
-        line: '#E2E7EC',
+        line: '#2B3648',
       },
       fontFamily: {
         serif: ['var(--font-fraunces)', 'Georgia', 'serif'],

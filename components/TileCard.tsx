@@ -27,7 +27,7 @@ export default function TileCard({
         className="w-full h-[150px] object-cover block"
       />
       <div className="px-[18px] pt-4 pb-[18px]">
-        <h3 className="font-serif text-base mb-1 text-navy">{title}</h3>
+        <h3 className="font-serif text-base mb-1 text-ink">{title}</h3>
         <p className="text-[12.5px] text-ink-soft">{description}</p>
         <span className="font-mono text-xs text-amber font-semibold mt-2 inline-block">
           {arrowLabel} &rarr;

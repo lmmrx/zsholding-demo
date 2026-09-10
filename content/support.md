@@ -48,7 +48,7 @@ faqCategories:
   - category: "Day to day"
     faqs:
       - question: "What's the dress code?"
-        answer: "Business casual in office areas; safety gear is required on the manufacturing floor and provided on your first day."
+        answer: "Business casual in office areas; safety gear is required in back-of-house and kitchen areas and provided on your first day."
       - question: "Who do I tell if I'll be out sick?"
         answer: "Message your manager directly and log the absence in the HR system as soon as you're able."
 

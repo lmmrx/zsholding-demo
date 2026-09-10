@@ -57,7 +57,7 @@ export default function AmenityPage({
       <PageHeading title={amenity.title} lede={amenity.pageDescription} />
 
       {hasSubAmenities ? (
-        <div className="grid grid-cols-3 max-[900px]:grid-cols-2 gap-[18px]">
+        <div className="grid grid-cols-3 max-[900px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[18px]">
           {amenity.subAmenities!.map((sub) => (
             <TileCard
               key={sub.slug}
@@ -70,7 +70,7 @@ export default function AmenityPage({
           ))}
         </div>
       ) : amenity.type === 'rooms' && amenity.rooms ? (
-        <div className="grid grid-cols-2 max-[900px]:grid-cols-2 gap-[18px]">
+        <div className="grid grid-cols-2 max-[640px]:grid-cols-1 gap-[18px]">
           {amenity.rooms.map((room, i) => (
             <BadgeCard
               key={room.title}
@@ -79,7 +79,7 @@ export default function AmenityPage({
               image={room.image}
               imageAlt={room.title}
             >
-              <h3 className="font-serif text-[17.5px] font-semibold mb-1.5 text-navy tracking-[-.005em]">
+              <h3 className="font-serif text-[17.5px] font-semibold mb-1.5 text-ink tracking-[-.005em]">
                 {room.title}
               </h3>
               {room.beds && (
@@ -102,7 +102,7 @@ export default function AmenityPage({
             {amenity.infoGroups.map((group, i) => (
               <div key={group.title} className="relative bg-paper border border-line rounded-[14px] px-5 py-5 shadow-sm">
                 <div className={`absolute top-0 left-3.5 right-3.5 h-1 rounded-b ${i % 2 === 0 ? 'bg-steel' : 'bg-amber'}`} />
-                <h3 className="font-serif text-[17px] font-semibold text-navy mb-3">{group.title}</h3>
+                <h3 className="font-serif text-[17px] font-semibold text-ink mb-3">{group.title}</h3>
                 <ul className="space-y-2">
                   {group.items.map((item) => (
                     <li key={item} className="text-[12.5px] text-ink-soft leading-[1.45] flex gap-2">

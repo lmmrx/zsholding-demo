@@ -70,4 +70,3 @@ videos:
     duration: "7:15"
     url: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_6"
 ---
-```

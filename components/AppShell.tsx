@@ -59,10 +59,10 @@ export default function AppShell({
       <Sidebar />
       <main className="flex-1 min-w-0">
         <Topbar crumbs={crumbs} searchEntries={getSearchEntries()} />
-        <section className="px-12 pt-11 pb-[90px] max-w-[1080px]">
+        <section className="px-12 max-[640px]:px-5 pt-11 pb-[90px] max-[640px]:pb-24 max-w-[1080px]">
           {children}
         </section>
-        <footer className="px-12 py-6 border-t border-line max-w-[1080px]">
+        <footer className="px-12 max-[640px]:px-5 py-6 border-t border-line max-w-[1080px]">
           <p className="font-mono text-[11px] text-ink-soft/60">
             © {new Date().getFullYear()} Zainul & Shazma Holdings Ltd. All rights reserved.
           </p>

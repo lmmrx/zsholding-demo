@@ -9,7 +9,7 @@ export function SectionLabel({
 }) {
   return (
     <div
-      className={`font-serif text-[20.5px] text-navy font-semibold tracking-[-.01em] ${
+      className={`font-serif text-[20.5px] text-ink font-semibold tracking-[-.01em] ${
         first ? 'mt-0' : 'mt-[38px]'
       } mb-4`}
     >

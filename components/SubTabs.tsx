@@ -20,7 +20,7 @@ export default function SubTabs({ tabs }: { tabs: Tab[] }) {
             onClick={() => setActive(tab.key)}
             className={`text-[13.5px] font-medium pb-2.5 pt-2.5 mr-6 relative top-px border-b-2 ${
               active === tab.key
-                ? 'text-navy border-amber font-semibold'
+                ? 'text-ink border-amber font-semibold'
                 : 'text-ink-soft border-transparent'
             }`}
           >

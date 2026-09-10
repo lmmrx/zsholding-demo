@@ -17,7 +17,7 @@ export default function LocationsPage() {
         lede="ZS Holdings operates seven properties across Alberta. Find the address and direct contact details for each below."
       />
 
-      <div className="grid grid-cols-3 max-[900px]:grid-cols-2 gap-[18px]">
+      <div className="grid grid-cols-3 max-[900px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[18px]">
         {properties.map((property, i) => {
           const hasHub = property.amenities && property.amenities.length > 0;
           return (
@@ -29,13 +29,13 @@ export default function LocationsPage() {
               imageAlt={`${property.name} exterior`}
               href={hasHub ? `/locations/${property.slug}` : undefined}
             >
-              <h3 className="font-serif text-[17.5px] font-semibold mb-1.5 text-navy tracking-[-.005em]">
+              <h3 className="font-serif text-[17.5px] font-semibold mb-1.5 text-ink tracking-[-.005em]">
                 {property.name}
               </h3>
               <p className="text-[13px] text-ink-soft leading-[1.55] mb-3">
                 {property.address}
               </p>
-              <div className="flex items-center gap-2 text-[12.5px] text-slate font-medium mt-1">
+              <div className="flex items-center gap-2 text-[12.5px] text-steel font-medium mt-1">
                 Booking: {property.bookingPhone}
               </div>
               {hasHub ? (
@@ -44,7 +44,7 @@ export default function LocationsPage() {
                 </div>
               ) : (
                 property.fax && (
-                  <div className="flex items-center gap-2 text-[12.5px] text-slate font-medium mt-1">
+                  <div className="flex items-center gap-2 text-[12.5px] text-steel font-medium mt-1">
                     Hotel Fax: {property.fax}
                   </div>
                 )

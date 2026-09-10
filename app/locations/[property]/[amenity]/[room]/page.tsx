@@ -66,7 +66,7 @@ export default function SubAmenityPage({
             {sub.infoGroups.map((group, i) => (
               <div key={group.title} className="relative bg-paper border border-line rounded-[14px] px-5 py-5 shadow-sm">
                 <div className={`absolute top-0 left-3.5 right-3.5 h-1 rounded-b ${i % 2 === 0 ? 'bg-steel' : 'bg-amber'}`} />
-                <h3 className="font-serif text-[17px] font-semibold text-navy mb-3">{group.title}</h3>
+                <h3 className="font-serif text-[17px] font-semibold text-ink mb-3">{group.title}</h3>
                 <ul className="space-y-2">
                   {group.items.map((item) => (
                     <li key={item} className="text-[12.5px] text-ink-soft leading-[1.45] flex gap-2">

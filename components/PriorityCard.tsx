@@ -12,7 +12,7 @@ export default function PriorityCard({
       <div className="font-mono text-xs text-amber font-semibold mb-2.5">
         {label}
       </div>
-      <h3 className="font-serif text-[18.5px] font-semibold mb-2 text-navy tracking-[-.005em]">
+      <h3 className="font-serif text-[18.5px] font-semibold mb-2 text-ink tracking-[-.005em]">
         {title}
       </h3>
       <p className="text-[13.5px] text-ink-soft leading-[1.6]">{description}</p>

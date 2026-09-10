@@ -67,7 +67,7 @@ export default function PropertyHubPage({
         {property.hubLede}
       </p>
 
-      <div className="grid grid-cols-3 max-[900px]:grid-cols-2 gap-[18px]">
+      <div className="grid grid-cols-3 max-[900px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[18px]">
         {amenities.map((amenity) => (
           <TileCard
             key={amenity.slug}

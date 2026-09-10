@@ -17,7 +17,7 @@ export default function PageHeading({
         </p>
       )}
       <h1
-        className={`font-serif font-semibold text-navy tracking-[-.02em] leading-[1.1] mb-3 ${
+        className={`font-serif font-semibold text-ink tracking-[-.02em] leading-[1.1] mb-3 ${
           titleSize === 'small' ? 'text-[26px]' : 'text-[38px]'
         }`}
       >

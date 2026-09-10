@@ -9,11 +9,11 @@ export default function TrainingRow({ item }: { item: TrainingItem }) {
         <Icon className="w-[18px] h-[18px] text-[#7A5316]" />
       </div>
       <div className="flex-1">
-        <h3 className="font-serif text-[15px] mb-0.5 text-navy">{item.title}</h3>
+        <h3 className="font-serif text-[15px] mb-0.5 text-ink">{item.title}</h3>
         <p className="text-[12.5px] text-ink-soft">{item.description}</p>
       </div>
       <div className="ml-auto text-right flex-shrink-0">
-        <div className="font-mono text-xs text-slate font-semibold">{item.duration}</div>
+        <div className="font-mono text-xs text-steel font-semibold">{item.duration}</div>
         <div className="text-[10.5px] text-ink-soft mt-0.5">{item.format}</div>
       </div>
     </div>

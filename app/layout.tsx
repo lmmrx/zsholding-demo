@@ -26,9 +26,6 @@ export const metadata: Metadata = {
     template: '%s — ZS Holdings Onboarding Portal',
   },
   description: 'Employee onboarding portal for Zainul & Shazma Holdings Ltd.',
-  //icons: {
-    //icon: '/logo-zsholdings.avif', // logo
-  //},
 };
 
 export default function RootLayout({

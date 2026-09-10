@@ -79,7 +79,7 @@ export default function VideoCard({ video }: { video: VideoItem }) {
       </div>
 
       <div className="px-4 pt-3.5 pb-4">
-        <h3 className="font-serif text-[15px] mb-1 text-navy">
+        <h3 className="font-serif text-[15px] mb-1 text-ink">
           {video.title}
         </h3>
 

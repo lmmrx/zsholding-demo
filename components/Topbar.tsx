@@ -8,7 +8,7 @@ export interface Crumb {
 
 export default function Topbar({ crumbs, searchEntries }: { crumbs: Crumb[]; searchEntries: SearchEntry[] }) {
   return (
-    <div className="sticky top-0 z-10 bg-bg/[0.86] backdrop-blur-sm border-b border-line px-11 py-[17px] flex items-center justify-between gap-6">
+    <div className="sticky top-0 z-10 bg-bg/[0.86] backdrop-blur-sm border-b border-line px-11 max-[640px]:px-5 py-[17px] flex items-center justify-between gap-6">
       <div className="font-mono text-xs text-ink-soft tracking-[.03em] min-w-0 truncate">
         {crumbs.map((crumb, i) => (
           <span key={i}>

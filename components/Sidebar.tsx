@@ -23,10 +23,65 @@ const ICONS = {
   support: SupportIcon,
 };
 
+function isNavActive(pathname: string, href: string) {
+  return href === '/' ? pathname === '/' : pathname.startsWith(href);
+}
+
+function MobileNav() {
+  const pathname = usePathname();
+
+  return (
+    <nav
+      aria-label="Main navigation"
+      className="
+        hidden
+        max-[640px]:flex
+
+        fixed
+        bottom-0
+        left-0
+        right-0
+        z-30
+
+        items-stretch
+        justify-around
+
+        bg-navy
+        text-white
+        shadow-[0_-1px_0_rgba(255,255,255,0.08)]
+      "
+    >
+      {NAV_ITEMS.map((item) => {
+        const Icon = ICONS[item.icon];
+        const isActive = isNavActive(pathname, item.href);
+
+        return (
+          <Link
+            key={item.href}
+            href={item.href}
+            aria-current={isActive ? 'page' : undefined}
+            className={`
+              flex flex-1 flex-col items-center justify-center gap-1
+              py-2.5
+              text-[10px] font-medium
+
+              ${isActive ? 'text-white' : 'text-white/55'}
+            `}
+          >
+            <Icon className="h-5 w-5 shrink-0" />
+            <span>{item.label}</span>
+          </Link>
+        );
+      })}
+    </nav>
+  );
+}
+
 export default function Sidebar() {
   const pathname = usePathname();
 
   return (
+    <>
     <aside
       className="
         sticky
@@ -53,7 +108,7 @@ export default function Sidebar() {
        white BG <div className="mb-4 rounded-lg bg-white px-4 py-3.5"> */}
 
       <div className="border-b border-white/[0.08] px-6 pb-6 pt-7">
-        <div className="mb-4 max-w-[216px]">
+        <div className="mb-4 max-w-[150px] mx-auto">
           <Image
             src="/images/logo/logo-zsholdings.avif"
             alt="ZS Holdings"
@@ -72,6 +127,7 @@ export default function Sidebar() {
             uppercase
             tracking-[.13em]
             text-white/45
+            text-center
           "
         >
           {SITE_TAGLINE}
@@ -195,5 +251,7 @@ export default function Sidebar() {
       </nav>
 
     </aside>
+    <MobileNav />
+    </>
   );
 }

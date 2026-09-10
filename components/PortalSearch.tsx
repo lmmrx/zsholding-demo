@@ -85,7 +85,7 @@ export default function PortalSearch({ entries }: { entries: SearchEntry[] }) {
                   }}
                   className="block px-4 py-3 hover:bg-bg transition-colors border-b border-line/60 last:border-b-0"
                 >
-                  <div className="text-[13px] font-semibold text-navy">{result.title}</div>
+                  <div className="text-[13px] font-semibold text-ink">{result.title}</div>
                   {result.subtitle && (
                     <div className="text-[11.5px] text-ink-soft mt-0.5 line-clamp-1">{result.subtitle}</div>
                   )}
